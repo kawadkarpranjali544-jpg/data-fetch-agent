@@ -23,13 +23,10 @@ def create_database():
             email       TEXT UNIQUE NOT NULL,
             phone       TEXT,
             gender      TEXT,
-            age         INTEGER,
             city        TEXT,
             state       TEXT,
             country     TEXT,
-            postcode    TEXT,
-            picture     TEXT,
-            fetched_at  TEXT
+            
         )
     """)
     conn.commit()
