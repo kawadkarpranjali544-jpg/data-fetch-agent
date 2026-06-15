@@ -70,18 +70,14 @@ monthly_sales = merged.groupby(
     ]
 )["Total_Sales"].sum().reset_index()
 
-print("=" * 70)
 print("MONTHLY SALES OF EACH PRODUCT FOR EACH CUSTOMER")
-print("=" * 70)
 print(monthly_sales)
 
 # -------------------------------
 # Detailed Report
 # -------------------------------
 print("\n")
-print("=" * 70)
 print("DETAILED SALES REPORT")
-print("=" * 70)
 
 print(
     merged[
@@ -102,10 +98,8 @@ print(
 # -------------------------------
 # Monthly Total Sales
 # -------------------------------
-print("\n")
-print("=" * 70)
+print("\n)
 print("MONTHLY TOTAL SALES")
-print("=" * 70)
 
 month_total = merged.groupby("Month")["Total_Sales"].sum().reset_index()
 
@@ -115,9 +109,7 @@ print(month_total)
 # Customer-wise Sales
 # -------------------------------
 print("\n")
-print("=" * 70)
 print("CUSTOMER-WISE SALES")
-print("=" * 70)
 
 customer_sales = merged.groupby("Customer_Name")["Total_Sales"].sum().reset_index()
 
@@ -127,9 +119,7 @@ print(customer_sales)
 # Product-wise Sales
 # -------------------------------
 print("\n")
-print("=" * 70)
 print("PRODUCT-WISE SALES")
-print("=" * 70)
 
 product_sales = merged.groupby("Product_Name")["Total_Sales"].sum().reset_index()
 
